@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencari Kode Pos</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <h2>
+            Pencari Kode Pos Wilayah Indonesia
+        </h2>
+    </div>
+    <section class="section" id="section-pencarian">
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Cari kode pos dan nama kelurahan di wilayah Indonesia dengan memilih nama Provinsi, Kota/Kabupaten, dan Kecamatan.
+                <div>
+                  <div class="field mt-4">
+                    <label class="label">Provinsi</label>
+                    <div class="control">
+                      <div class="select is-rounded" id="select-provinsi">
+                        <select id="level1"> </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field mt-4">
+                    <label class="label">Kota atau Kabupaten</label>
+                    <div class="control">
+                      <div class="select is-rounded" id="select-kotakab">
+                        <select id="level2"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field mt-4">
+                    <label class="label">Kecamatan</label>
+                    <div class="control">
+                      <div class="select is-rounded" id="select-kecamatan">
+                        <select id="level3"></select>
+                      </div>
+                    </div>
+                    <div class="field mt-4">
+                        <label class="label">Hasil Pencarian Kode Pos dan Kelurahan yang Tersedia</label>
+                        <div class="control">
+                          <div class="select is-rounded" id="select-kecamatan">
+                            <select id="level4"></select>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-4"><list-kodepos></list-kodepos></div>
+      </section>
+      
+      <script src="script.js"></script>
+</body>
+</html>
